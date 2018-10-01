@@ -32,9 +32,9 @@ errorCheck "Failed to pull $CURRENT_BRANCH"
 
 # bump version
 docker run --rm -v "$PWD":/app treeder/bump $BUMP
+errorCheck "Failed to run \"treeder/bump\" container"
 version="$(cat VERSION)"
 echo "version: $version"
-errorCheck "Failed to run \"treeder/bump\" container"
 
 # build
 ./build.sh
