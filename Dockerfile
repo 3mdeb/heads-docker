@@ -1,5 +1,6 @@
-FROM ubuntu:16.04
-MAINTAINER Piotr Król <piotr.krol@3mdeb.com>
+FROM debian:buster-20200908
+
+MAINTAINER Maciej Pijanowski <maciej.pijanowski@3mdeb.com>
 
 RUN  \
 	useradd -p locked -m heads && \
@@ -9,34 +10,28 @@ RUN  \
 	zlib1g-dev \
 	uuid-dev \
 	libdigest-sha-perl \
-	iasl \
-	bzip2 \
+	libelf-dev \
 	bc \
-	curl \
-	ccache \
-	cpio \
-	git \
-	python \
-	m4 \
-	flex \
+	bzip2 \
 	bison \
+	flex \
 	git \
-	gnat \
 	gnupg \
-	gdb \
-	doxygen \
-	ncurses-dev \
-	cmake \
-	make \
+	iasl \
+	m4 \
 	nasm \
 	patch \
-	pkg-config \
-	g++ \
-	gcc-multilib \
+	python \
 	wget \
-	liblzma-dev \
-	libelf-dev \
-	zlib1g-dev \
+	gnat \
+	cpio \
+	ccache \
+	pkg-config \
+	cmake \
+	libusb-1.0-0-dev \
+	autoconf \
+	texinfo \
+	ncurses-dev \
 	&& \
 	apt-get clean
 

@@ -13,17 +13,25 @@ docker pull 3mdeb/heads-docker
 To use container run:
 
 ```
-docker run --rm -it -v /path/to/heads:/home/heads/heads -w /home/heads/heads 3mdeb/heads-docker /bin/bash
+$ git clone https://github.com/osresearch/heads
+$ cd heads
+$ docker run --rm -it -v $PWD:$PWD -w $PWD 3mdeb/heads-docker /bin/bash
 ```
 
-Then to build Heads inside container run for example:
+Then to build Heads inside container run (in docker shell) for example:
 
 ```
-make BOARD=x220
+(docker)$ make BOARD=x230
 ```
 
-To build the container:
+## Build container
 
 ```
-./build.sh
+curl -s https://raw.githubusercontent.com/3mdeb/docker-release-manager/master/release-manager.sh | bash /dev/stdin build
+```
+
+## Push container
+
+```
+curl -s https://raw.githubusercontent.com/3mdeb/docker-release-manager/master/release-manager.sh | bash /dev/stdin push
 ```
