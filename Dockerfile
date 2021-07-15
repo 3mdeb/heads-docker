@@ -32,6 +32,11 @@ RUN  \
 	autoconf \
 	texinfo \
 	ncurses-dev \
+	rsync \
+	libssl-dev \
+	libtool \
+	device-tree-compiler \
+	u-boot-tools \
 	&& \
 	apt-get clean
 
