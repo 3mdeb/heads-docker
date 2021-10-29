@@ -1,4 +1,4 @@
-FROM debian:buster-20200908
+FROM debian:buster-20211011
 
 MAINTAINER Maciej Pijanowski <maciej.pijanowski@3mdeb.com>
 
@@ -22,6 +22,8 @@ RUN  \
 	nasm \
 	patch \
 	python \
+	python2 \
+	python3 \
 	wget \
 	gnat \
 	cpio \
@@ -32,6 +34,18 @@ RUN  \
 	autoconf \
 	texinfo \
 	ncurses-dev \
+	doxygen \
+	graphviz \
+	udev \
+	libudev1 \
+	libudev-dev \
+	automake \
+	libtool \
+	rsync \
+	innoextract \
+	libssl-dev \
+	device-tree-compiler \
+	u-boot-tools \
 	&& \
 	apt-get clean
 
