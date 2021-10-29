@@ -32,6 +32,7 @@ RUN  \
 	autoconf \
 	texinfo \
 	ncurses-dev \
+	rsync \
 	&& \
 	apt-get clean
 
