@@ -44,6 +44,8 @@ RUN  \
 	rsync \
 	innoextract \
 	libssl-dev \
+	device-tree-compiler \
+	u-boot-tools \
 	&& \
 	apt-get clean
 
