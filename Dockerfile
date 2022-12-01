@@ -1,4 +1,4 @@
-FROM debian:buster-20211011
+FROM debian:bullseye-20221114
 
 MAINTAINER Maciej Pijanowski <maciej.pijanowski@3mdeb.com>
 
@@ -43,6 +43,7 @@ RUN  \
 	libtool \
 	rsync \
 	innoextract \
+	sudo \
 	libssl-dev \
 	device-tree-compiler \
 	u-boot-tools \
