@@ -1,4 +1,4 @@
-FROM debian:bullseye-20221114
+FROM debian:11
 
 MAINTAINER Maciej Pijanowski <maciej.pijanowski@3mdeb.com>
 
@@ -17,6 +17,7 @@ RUN  \
 	flex \
 	git \
 	gnupg \
+	gawk \
 	iasl \
 	m4 \
 	nasm \
@@ -44,6 +45,7 @@ RUN  \
 	rsync \
 	innoextract \
 	sudo \
+	imagemagick \
 	libssl-dev \
 	device-tree-compiler \
 	u-boot-tools \
