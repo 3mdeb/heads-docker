@@ -1,4 +1,4 @@
-FROM debian:11
+FROM ubuntu:22.04
 
 MAINTAINER Maciej Pijanowski <maciej.pijanowski@3mdeb.com>
 
@@ -22,9 +22,9 @@ RUN  \
 	m4 \
 	nasm \
 	patch \
-	python \
 	python2 \
 	python3 \
+	python-is-python3 \
 	wget \
 	gnat \
 	cpio \
@@ -49,6 +49,7 @@ RUN  \
 	libssl-dev \
 	device-tree-compiler \
 	u-boot-tools \
+	zip \
 	&& \
 	apt-get clean
 
