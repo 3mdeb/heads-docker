@@ -49,6 +49,7 @@ RUN  \
 	libssl-dev \
 	device-tree-compiler \
 	u-boot-tools \
+	libncurses5-dev \
 	zip \
 	&& \
 	apt-get clean
